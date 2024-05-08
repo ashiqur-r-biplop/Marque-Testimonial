@@ -1,0 +1,92 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.Marque-container {
+  max-width: 1140px;
+  margin: 0px auto;
+}
+
+.Marque-normal {
+  padding: 40px 0px;
+}
+
+.Marquee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+ 
+}
+
+.marquee-card {
+  background-color: #646464;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+}
+
+.marquee-card-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.marquee-card-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.marquee-social-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.marquee-social-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+
+ /* MARQUEE LOGO*/
+ .t-testimonial-marquee {
+    will-change: transform;
+    animation: work-example 56s linear infinite;
+    /* manipulate the speed of the marquee by changing "40s" line above*/
+  }
+  .reverse {
+    will-change: transform;
+    animation: work-example-2 56s linear infinite;
+    /* manipulate the speed of the marquee by changing "40s" line above*/
+  }
+
+  @keyframes work-example-2 {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes work-example {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
