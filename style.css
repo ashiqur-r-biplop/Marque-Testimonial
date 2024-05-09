@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-body {
+.marquee-body {
   font-family: 'Montserrat', sans-serif;
   height: auto;
   display: flex;
