@@ -8,7 +8,6 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-
   height: auto;
   display: flex;
   justify-content: center;
@@ -23,10 +22,10 @@ body {
 
 :root {
   --marquee-width: 100vw;
-  --marquee-height: 20vh;
+  --marquee-height: auto;
   --marquee-elements-displayed: 4;
   --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
-  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+  --marquee-animation-duration: calc(var(--marquee-elements) * 6s);
 }
 
 .marquee {
@@ -43,7 +42,7 @@ body {
   top: 0;
   width: 10rem;
   /* Adjust width as needed */
-  height: 100%;
+  height: auto;
   content: "";
   z-index: 1;
 }
@@ -58,7 +57,7 @@ body {
 
 .marquee-content {
   list-style: none;
-  height: 100%;
+  height: auto;
   display: flex;
   gap: 20px;
 
@@ -70,13 +69,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: #282828;
   color: #eee;
   flex-shrink: 0;
   width: var(--marquee-element-width);
   max-height: 100%;
-  padding: 20px;
+  padding: 30px;
 }
 
 .marquee-card {
@@ -88,7 +87,7 @@ body {
 
 .marquee-company-logo {
   width: 80px;
-  height: 55px;
+  height: 60px;
 }
 
 .marquee-company-logo img {
